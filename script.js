@@ -43,12 +43,12 @@
 
 const portfolioItems = [
 
-  /* ---------- VIDEO ADS (vertical 9:16) ---------- */
+  /* ---------- VIDEO ADS (vertical 9:16, playing from Google Drive) ---------- */
   {
     id: "video-01",
     type: "video",
     category: "video",
-    src: "",                                            // local MP4 goes here later
+    src: "",
     driveId: "14OZCXW7h7dYO3lO920FRD3MJ2iY2KddA",
     poster: "video-01-poster.jpg",
     title: "Video Ad 01",
@@ -99,17 +99,6 @@ const portfolioItems = [
     platform: "Meta / Video Ad",
     role: "Editing + Creative Production"
   },
-  {
-    id: "video-06",
-    type: "video",
-    category: "video",
-    src: "video-06.mp4",                 // empty slot, ready for your file
-    driveId: "",
-    poster: "video-06-poster.jpg",
-    title: "Video Ad 06",
-    platform: "Meta / Video Ad",
-    role: "Editing + Creative Production"
-  },
 
   /* ---------- STATIC ADS ---------- */
   {
@@ -139,33 +128,6 @@ const portfolioItems = [
     platform: "Brand / Logo Design",
     role: "Graphic Design"
   },
-  {
-    id: "static-04",
-    type: "image",
-    category: "static",
-    src: "static-04.jpg",
-    title: "Static Ad 04",
-    platform: "Meta / Static Ad",
-    role: "Design + Creative Production"
-  },
-  {
-    id: "static-05",
-    type: "image",
-    category: "static",
-    src: "static-05.jpg",
-    title: "Static Ad 05",
-    platform: "Meta / Static Ad",
-    role: "Design + Creative Production"
-  },
-  {
-    id: "static-06",
-    type: "image",
-    category: "static",
-    src: "static-06.jpg",
-    title: "Static Ad 06",
-    platform: "Meta / Static Ad",
-    role: "Design + Creative Production"
-  },
 
   /* ---------- SOCIAL CONTENT ---------- */
   {
@@ -185,17 +147,6 @@ const portfolioItems = [
     title: "ADU Exterior Feature",
     platform: "NOCO Design/Build — Social Media / Image",
     role: "Content Production"
-  },
-  {
-    id: "social-video-01",
-    type: "video",
-    category: "social",
-    src: "social-03.mp4",
-    driveId: "",
-    poster: "social-03-poster.jpg",
-    title: "Social Content 03",
-    platform: "Social Media / Video",
-    role: "Editing + Content Production"
   },
 
   /* ---------- AI-ASSISTED CREATIVE ---------- */
@@ -220,25 +171,10 @@ const portfolioItems = [
     title: "A1 Building Contractors — Logo Animation",
     platform: "AI-Assisted Creative / Video",
     role: "Creative Direction + Editing"
-  },
-  {
-    id: "ai-01",
-    type: "image",
-    category: "ai",
-    src: "ai-image-01.jpg",
-    title: "AI-Assisted Creative 03",
-    platform: "Google Flow / AI-Assisted Creative",
-    role: "Creative Direction + Production"
-  },
-  {
-    id: "ai-02",
-    type: "image",
-    category: "ai",
-    src: "ai-image-02.jpg",
-    title: "AI-Assisted Creative 04",
-    platform: "Nano Banana / AI-Assisted Creative",
-    role: "Creative Direction + Production"
   }
+
+  /* ADD MORE ITEMS HERE â copy a block above, put a comma after the block
+     before it, and give the new one a unique id. */
 
 ];
 
