@@ -225,8 +225,18 @@ button { font-family: inherit; }
 }
 .nav__menu a:hover { color: var(--grey); }
 
-.nav__cta { padding: 12px 20px; }
-.nav__cta:hover { color: var(--black); }
+/* The CTA lives inside .nav__menu, so it needs a selector at least as
+   specific as `.nav__menu a` or the link colour overrides its white text. */
+.nav__menu a.nav__cta {
+  padding: 12px 20px;
+  background: var(--black);
+  color: var(--white);
+  border: 1px solid var(--black);
+}
+.nav__menu a.nav__cta:hover {
+  background: var(--white);
+  color: var(--black);
+}
 
 /* Hamburger — hidden on desktop */
 .nav__toggle {
@@ -827,9 +837,10 @@ body.is-locked { overflow: hidden; }
     padding: 16px 0;
     border-bottom: 1px solid var(--line);
   }
-  .nav__cta {
+  .nav__menu a.nav__cta {
     margin-top: 18px;
-    border-bottom: 1px solid var(--black);
+    padding: 16px 20px;
+    border: 1px solid var(--black);
     justify-content: center;
   }
 
